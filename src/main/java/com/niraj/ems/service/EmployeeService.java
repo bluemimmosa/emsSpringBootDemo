@@ -6,6 +6,7 @@
 package com.niraj.ems.service;
 
 import com.niraj.ems.model.Employee;
+import java.util.List;
 
 /**
  *
@@ -13,4 +14,6 @@ import com.niraj.ems.model.Employee;
  */
 public interface EmployeeService {
     Employee saveEmployee(Employee employee);
+    List<Employee> getAllEmployees();
+    Employee getEmployeeById(long id);
 }
